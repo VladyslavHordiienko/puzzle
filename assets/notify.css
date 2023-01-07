@@ -1,0 +1,151 @@
+.notifications {
+  position: fixed;
+  top: 1%;
+  right: 1%;
+  max-width: 320px;
+  z-index: 5;
+}
+.notifications__items {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+.notifications__item {
+  display: flex;
+  justify-content: space-between;
+  background-color: #fff;
+  border-radius: 20px;
+  border: 1px solid #e2dede;
+  padding: 6px 0px;
+  margin-top: 5px;
+}
+.hiddenNoty {
+  animation-name: hiddenNoty;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  -webkit-animation-name: hiddenNoty;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+}
+@-moz-keyframes hiddenNoty {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@-webkit-keyframes hiddenNoty {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+@keyframes hiddenNoty {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+.showNoty {
+  animation-name: showNoty;
+  animation-duration: 1.5s;
+  animation-timing-function: linear;
+  -webkit-animation-name: showNoty;
+  -webkit-animation-duration: 1.5s;
+  -webkit-animation-timing-function: linear;
+}
+@-moz-keyframes showNoty {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-webkit-keyframes showNoty {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes showNoty {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.notifications__item__img {
+  max-width: 50px;
+  margin-left: 5px;
+}
+.notifications__item__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.notifications__item__content{
+  padding: 0 5px;
+}
+.notifications__item__content__header{
+  font-size: 13px
+}
+.notifications__item-name{
+  font-weight: bold;
+}
+.notifications__item-address{
+  text-decoration: underline;
+}
+.notifications__item__content__desc{
+  font-size: 16px;
+  font-weight: 500;
+  color: #134094;
+}
+.notifications__item__content__bottom{
+  display: flex;
+  align-items: center;
+}
+.notifications__item__time{
+  font-size: 13px;
+}
+.notifications__item__icons{
+  display: flex;
+  margin-left: 10px;
+}
+.notifications__item__icons img{
+  margin-right: 10px;
+  width: 25px;
+  height: 25px;
+}
+.notifications__item__btn{
+  margin: 0 10px 0 5px;
+}
+.notifications__item__btn-close{
+  vertical-align: inherit;;
+}
